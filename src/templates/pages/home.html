@@ -1,0 +1,49 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<body>
+	<div class='container'>
+		<header>
+			<a href="/pages/home/"><img src="{% static 'images/logo.svg' %}" class='nav-brand'></a>
+		</header>
+	</div>
+
+	<div class='container'>
+		<h1>Who's watching?</h1>
+
+		<ul class='profiles'>
+			<li>
+				<a href="../user1">
+					<img src="{% static 'images/red.jpg' %}">
+					<p>User 1</p>
+				</a>
+			</li>
+			<li>
+				<a href="../user2">
+					<img src="{% static 'images/blue.png' %}">
+					<p>User 2</p>
+				</a>
+			</li>
+			<li>
+				<a href="../user3">
+					<img src="{% static 'images/yellow.jpg' %}">
+					<p>User 3</p>
+				</a>
+			</li>
+			<li>
+				<a href="../user4">
+					<img src="{% static 'images/green.jpeg' %}">
+					<p>User 4</p>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class='container'>
+		<a href="" class='cta'>MANAGE PROFILES</a>
+	</div>
+</body>
+</html>
